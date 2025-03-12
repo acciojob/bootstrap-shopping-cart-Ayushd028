@@ -10,68 +10,78 @@
 </head>
 
 <body>
-    <div class="container">
-        <h2 class="block-heading text-center text-primary">Shopping Cart</h2>
+    <div class="container cart-container">
+        <!-- Heading Section -->
+        <div class="header">
+            <h2>Shopping Cart</h2>
+            <p>The customer is very important, the customer will be followed by the customer. Now, as an urn, I have no right to be in possession of property.</p>
+        </div>
 
         <div class="row">
+            <!-- Product Section -->
             <div class="col-lg-8">
-                <div class="product row align-items-center border p-3 my-2">
-                    <div class="col-md-3">
-                        <img src="https://via.placeholder.com/100" class="img-fluid" alt="Product 1">
+                <div class="cart-item">
+                    <img src="https://via.placeholder.com/70" alt="Product">
+                    <div class="details">
+                        <h5>I am very sorry</h5>
+                        <p>Display: 5 inches <br> RAM: 4GB <br> Memory: 32GB</p>
                     </div>
-                    <div class="col-md-6">
-                        <h5>Product 1</h5>
-                        <p class="text-muted">$20.00</p>
+                    <div class="quantity">
+                        <label>Quantity:</label>
+                        <input type="number" class="form-control" style="width: 60px;" value="0">
                     </div>
-                    <div class="col-md-3 text-end">
-                        <button class="btn btn-danger btn-sm">Remove</button>
-                    </div>
+                    <span class="fw-bold">$120</span>
                 </div>
 
-                <div class="product row align-items-center border p-3 my-2">
-                    <div class="col-md-3">
-                        <img src="https://via.placeholder.com/100" class="img-fluid" alt="Product 2">
+                <div class="cart-item">
+                    <img src="https://via.placeholder.com/70" alt="Product">
+                    <div class="details">
+                        <h5>I am very sorry</h5>
+                        <p>Display: 5 inches <br> RAM: 4GB <br> Memory: 32GB</p>
                     </div>
-                    <div class="col-md-6">
-                        <h5>Product 2</h5>
-                        <p class="text-muted">$35.00</p>
+                    <div class="quantity">
+                        <label>Quantity:</label>
+                        <input type="number" class="form-control" style="width: 60px;" value="1">
                     </div>
-                    <div class="col-md-3 text-end">
-                        <button class="btn btn-danger btn-sm">Remove</button>
-                    </div>
+                    <span class="fw-bold">$120</span>
                 </div>
 
-                <div class="product row align-items-center border p-3 my-2">
-                    <div class="col-md-3">
-                        <img src="https://via.placeholder.com/100" class="img-fluid" alt="Product 3">
+                <div class="cart-item">
+                    <img src="https://via.placeholder.com/70" alt="Product">
+                    <div class="details">
+                        <h5>I am very sorry</h5>
+                        <p>Display: 5 inches <br> RAM: 4GB <br> Memory: 32GB</p>
                     </div>
-                    <div class="col-md-6">
-                        <h5>Product 3</h5>
-                        <p class="text-muted">$15.00</p>
+                    <div class="quantity">
+                        <label>Quantity:</label>
+                        <input type="number" class="form-control" style="width: 60px;" value="1">
                     </div>
-                    <div class="col-md-3 text-end">
-                        <button class="btn btn-danger btn-sm">Remove</button>
-                    </div>
+                    <span class="fw-bold">$120</span>
                 </div>
             </div>
 
+            <!-- Summary Section -->
             <div class="col-lg-4">
-                <div class="summary border-top p-3 bg-light">
-                    <h5 class="text-primary">Order Summary</h5>
-                    <div class="d-flex justify-content-between">
+                <div class="summary">
+                    <h5>Summary</h5>
+                    <div>
                         <span>Subtotal</span>
-                        <span>$70.00</span>
+                        <span>$360</span>
                     </div>
-                    <div class="d-flex justify-content-between">
+                    <div>
+                        <span>Discount</span>
+                        <span>$0</span>
+                    </div>
+                    <div>
                         <span>Shipping</span>
-                        <span>$5.00</span>
+                        <span>$0</span>
                     </div>
                     <hr>
-                    <div class="d-flex justify-content-between">
+                    <div>
                         <strong>Total</strong>
-                        <strong>$75.00</strong>
+                        <strong>$360</strong>
                     </div>
-                    <button class="btn btn-primary w-100 mt-3">Proceed to Checkout</button>
+                    <button class="checkout-btn">Checkout</button>
                 </div>
             </div>
         </div>
